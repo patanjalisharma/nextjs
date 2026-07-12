@@ -1,10 +1,15 @@
+import Link from "next/link"
 
 function ProductPage() {
+  const productsId = 1;
   return (
     <div>
-        <div>Product 1</div>
-        <div>Product 2</div>
-        <div>Product 3</div>
+
+      
+      <Link href="/">Home</Link>
+        <Link href={`/products/${productsId}`}>Product 1</Link>
+        <Link href="/products/2">Product 2</Link>
+        <Link href="/products/3">Product 3</Link>
     </div>
   )
 }
